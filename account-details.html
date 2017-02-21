@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="js/order.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css">
+
+
+    <style>
+    body{
+        font-family: "Oxygen", sans-serif;
+    }
+    #page-wrapper{
+        background-color: white;
+    }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Vendor Dashboard</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="stock-update.html"><i class="fa fa-fw fa-bar-chart-o"></i> Stock Update</a>
+                    </li>
+                   <li>
+                        <a href="order.html"><i class="fa fa-fw fa-bar-chart-o"></i> Order</a>
+                    </li>
+                    <li>
+                        <a href="payment.html"><i class="fa fa-fw fa-bar-chart-o"></i> Payment</a>
+                    </li>
+                    <li>
+                        <a href="order-history.html"><i class="fa fa-fw fa-bar-chart-o"></i> History</a>
+                    </li>
+                    <li>
+                        <a href="account-details.html"><i class="fa fa-fw fa-bar-chart-o"></i> Account Details</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                
+                <div class="row account-details">
+                   <form class = "form-horizontal" role = "form">
+                       <h3>Account Details</h3>
+                       <div class = "form-group">
+                          <label for = "company-name" class = "col-sm-2 control-label">Company Name</label>
+                            
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-name" placeholder = "Mantek Technologies">
+                          </div>
+                       </div>
+                       
+                       <div class = "form-group">
+                          <label for = "company-email-id" class = "col-sm-2 control-label">Email-id</label>
+                            
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-email-id" placeholder = "manjith@mantek.com">
+                          </div>
+                       </div>
+                       <h3>Seller Details</h3>
+
+                       <div class = "form-group">
+                          <label for = "name" class = "col-sm-2 control-label">Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "name" placeholder = "Man">
+                          </div>
+                       </div>
+                       <div class = "form-group">
+                          <label for = "email-id" class = "col-sm-2 control-label">Email-id</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "email-id" placeholder = "abc@xyz.com">
+                          </div>
+                       </div>
+
+                       <div class = "form-group">
+                          <label for = "alternate-email" class = "col-sm-2 control-label">Alternate Email-id</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "alternate-email" placeholder = "abc@xyz.com">
+                          </div>
+                       </div>
+                       <div class = "form-group">
+                          <label for = "mobile-no" class = "col-sm-2 control-label">Mobile No.</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "mobile-no" placeholder = "9798888888">
+                          </div>
+                       </div>
+
+                       <div class = "form-group">
+                          <label for = "alternate-mobile-no" class = "col-sm-2 control-label">Alternate Mobile No.</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "alternate-mobile-no" placeholder = "9798888888">
+                          </div>
+                       </div>
+
+                        <h3>Company Details</h3>
+
+                        <div class = "form-group">
+                          <label for = "company-name" class = "col-sm-2 control-label">Company Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "company-name" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "display-name" class = "col-sm-2 control-label">Display Name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "display-name" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "description" class = "col-sm-2 control-label">Description</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "description" placeholder = "mantek teck">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "PAN" class = "col-sm-2 control-label">PAN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "PAN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "TIN" class = "col-sm-2 control-label">TIN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "TIN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+                        <div class = "form-group">
+                          <label for = "TAN" class = "col-sm-2 control-label">TAN Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "TAN" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+
+
+                       <h3>Account Details</h3>
+                        <div class = "form-group">
+                          <label for = "ac-name" class = "col-sm-2 control-label">A/c Holder name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ac-name" placeholder = "ABCDEFG">
+                          </div>
+                       </div>
+                         <div class = "form-group">
+                          <label for = "ac-number" class = "col-sm-2 control-label">A/c Holder Number</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ac-number" placeholder = "1235467">
+                          </div>
+                       </div>
+
+                         <div class = "form-group">
+                          <label for = "branch-name" class = "col-sm-2 control-label">Branch name</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "branch-name" placeholder = "annanagar">
+                          </div>
+                       </div>
+
+                         <div class = "form-group">
+                          <label for = "ifsc" class = "col-sm-2 control-label">IFSC</label>     
+                          <div class = "col-sm-8">
+                             <input type = "text" class = "form-control" id = "ifsc" placeholder = "SAWDFW">
+                          </div>
+                       </div>
+                    <div class = "form-group">
+                          <div class = "col-sm-offset-2 col-sm-10">
+                             <button type = "submit" class = "btn btn-default">Save Changes</button>
+                          </div>
+                       </div>
+                    
+                </form>
+
+
+
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
